@@ -15,6 +15,12 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final _dataService = DataService();
   String _response;
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
