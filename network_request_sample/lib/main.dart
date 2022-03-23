@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final _dataService = DataService();
-  String _response;
+  String? _response;
 
   @override
   void initState() {
@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
           child: Builder(
             builder: (context) {
               if (_response != null) {
-                return Text(_response);
+                return Text(_response!);
               } else {
                 return ElevatedButton(
                   child: Text("Make Request"),
